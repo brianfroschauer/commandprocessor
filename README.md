@@ -73,7 +73,7 @@ This command interrupt the program.
 
 `quit`
 
-### Tests
+## Tests
 
 Run all the unit test classes using maven.
 
