@@ -6,8 +6,8 @@ import commandprocessor.command.factory.*;
 import commandprocessor.command.factory.strategy.CommandFactoryStrategy;
 import commandprocessor.command.output.CommandOutput;
 import commandprocessor.command.processor.CommandProcessor;
-import commandprocessor.configuration.CommandProcessorConfiguration;
-import commandprocessor.configuration.DefaultCommandProcessorConfiguration;
+import commandprocessor.command.configuration.CommandProcessorConfiguration;
+import commandprocessor.command.configuration.DefaultCommandProcessorConfiguration;
 import commandprocessor.file.File;
 
 import java.io.BufferedReader;

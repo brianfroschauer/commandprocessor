@@ -1,4 +1,4 @@
-package commandprocessor.configuration;
+package commandprocessor.command.configuration;
 
 import commandprocessor.command.factory.strategy.CommandFactoryStrategy;
 import commandprocessor.command.processor.CommandProcessor;

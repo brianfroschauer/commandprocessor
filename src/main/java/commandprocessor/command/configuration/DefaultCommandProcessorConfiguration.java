@@ -1,4 +1,4 @@
-package commandprocessor.configuration;
+package commandprocessor.command.configuration;
 
 import commandprocessor.command.factory.*;
 import commandprocessor.command.factory.strategy.CommandFactoryStrategy;
@@ -29,6 +29,6 @@ public class DefaultCommandProcessorConfiguration implements CommandProcessorCon
 
     @Override
     public File getFile() {
-        return new FileImpl(null, "root", true);
+        return new FileImpl("root", true);
     }
 }
