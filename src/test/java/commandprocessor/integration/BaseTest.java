@@ -20,7 +20,7 @@ public class BaseTest {
     protected void runTest(String[] expectedOutput, String... input) {
         final List<String> result = new ArrayList<>();
 
-        File current = new FileImpl(null, "root", true);
+        File current = new FileImpl("root", true);
 
         final List<Command> commands = Arrays.stream(input)
                 .map(this::buildCommand)

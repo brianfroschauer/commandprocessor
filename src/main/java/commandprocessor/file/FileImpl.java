@@ -12,13 +12,6 @@ public class FileImpl implements File {
     private final List<File> subdirectories;
     private final boolean isDirectory;
 
-    public FileImpl(File parent, String name, boolean isDirectory) {
-        this.parent = parent;
-        this.name = name;
-        this.subdirectories = new ArrayList<>();
-        this.isDirectory = isDirectory;
-    }
-
     public FileImpl(String name, boolean isDirectory) {
         this.parent = null;
         this.name = name;
