@@ -8,10 +8,11 @@ import java.util.List;
 
 public class CommandOutputImpl implements CommandOutput {
 
-    private File file;
-    private List<String> output;
+    private final File file;
+    private final List<String> output;
 
-    public CommandOutputImpl(final @NotNull File file, final String... output) {
+    public CommandOutputImpl(final @NotNull File file,
+                             final String... output) {
         this.file = file;
         this.output = Arrays.asList(output);
     }
@@ -21,16 +22,8 @@ public class CommandOutputImpl implements CommandOutput {
         return file;
     }
 
-    public void setFile(File file) {
-        this.file = file;
-    }
-
     @Override
     public List<String> getOutput() {
         return output;
-    }
-
-    public void setOutput(List<String> output) {
-        this.output = output;
     }
 }
