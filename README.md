@@ -16,19 +16,27 @@ Interactive command processor developed for the Salesforce technical challenge.
 
 1. Clone the Command Processor repository.
 
-`git clone https://github.com/brianfroschauer/commandprocessor.git`
+```
+git clone https://github.com/brianfroschauer/commandprocessor.git
+```
 
 2. Change directory to commandprocessor package.
 
-`cd commandprocessor`
+```bash
+cd commandprocessor
+```
 
 3. Compile the application.
 
-`mvn compile`
+```
+mvn compile
+```
 
 4. Execute the application.
 
-`mvn exec:java -Dexec.mainClass=commandprocessor.Main`
+```
+mvn exec:java -Dexec.mainClass=commandprocessor.Main
+```
 
 5. Try executing some command like `ls` in the command line.
 
@@ -38,46 +46,64 @@ Interactive command processor developed for the Salesforce technical challenge.
 
 This command changes the current path to a sub-directory (by name).
 
-`cd <directoryName>`
+```
+cd <directoryName>
+```
 
 ##### 2. Create file
 
 This command creates a "file" in the current directory.
 
-`touch <fileName>`
+```
+touch <fileName>
+```
 
 ##### 3. Current directory
 
 This command print the full path of the current directory.
 
-`pwd`
+```
+pwd
+```
 
 ##### 4. List
 
 This command lists the contents (directories and files) of current directory. If recursive parameter is provided, prints
 everything in the current directory and all subdirectories.
 
-`ls`
+```
+ls
+```
 
-`ls -r`
+List recursive:
+
+```
+ls -r
+```
 
 ##### 5. Make directory
 
 This command creates a directory entry in the cache.
 
-`mkdir <directoryName>`
+```
+mkdir <directoryName>
+```
 
 ##### 6. Quit
 
 This command interrupt the program.
 
-`quit`
+```
+quit
+```
 
 ## Tests
 
 Run all the unit test classes using maven.
 
-`mvn test`
+```
+mvn test
+```
 
 ## Design
 
