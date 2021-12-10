@@ -8,7 +8,7 @@ Interactive command processor developed for the Salesforce technical challenge.
 
 ### Prerequisites
 
-1. [JDK 8 Installation for OS X](https://docs.oracle.com/javase/8/docs/technotes/guides/install/mac_jdk.html#CHDBADCG)
+1. [JDK 8 Installation](https://docs.oracle.com/javase/8/docs/technotes/guides/install)
 
 2. [Maven installation](https://maven.apache.org/install.html)
 
@@ -136,7 +136,7 @@ public interface CommandProcessor {
 }
 ```
 
-### The command factory
+### The command factory interface
 
 The command factory knows how to create a command given the command arguments as an array of strings. It also has a
 method that returns the command used as the factory strategy name.
